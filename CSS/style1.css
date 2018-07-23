@@ -47,3 +47,7 @@ nav {
 	text-align: center;
 	font-family: Arial;
 }
+
+ul {
+	display: inline;
+}
