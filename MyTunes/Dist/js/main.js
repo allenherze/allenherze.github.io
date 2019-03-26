@@ -1,8 +1,4 @@
 // Responsive Nav
-
-$(document).ready(function(){
-    alert("hi");}
-	
 $(function() {
 	menu = $('nav ul');
 
