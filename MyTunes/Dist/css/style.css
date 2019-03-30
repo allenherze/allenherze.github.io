@@ -54,6 +54,10 @@ section#entertainment {
   text-align: left;
 }
 
+#video img {
+  padding-top: 1.5rem;
+}
+
 /* Showcase */
 #showcase {
     margin: 0;
@@ -153,15 +157,16 @@ footer .footer-cols ul li:first-child{
 /* Text color */
 
 .text-primary {
-    color: var(--primary-color)
+    color: var(--primary-color);
 }
 
 .text-secondary {
-    color: var(--secondary-color)
+    color: var(--secondary-color);
+    font-size: 1.2rem;
 }
 
 .text-light {
-    color: var(--light-color)
+    color: var(--light-color);
 }
 
 .bg-light {
