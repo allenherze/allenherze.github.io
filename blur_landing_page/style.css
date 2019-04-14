@@ -52,11 +52,12 @@ body {
     top: 85%;
     margin-left: 20%;
     color: #333;
+    display: block;
     text-decoration: none;
 } 
 
 .btn-down .arrow {
-    display: block;
+    
     width: 3rem;
     height: 3rem;
     border-bottom: 1px solid #333;
@@ -171,5 +172,9 @@ footer p {
     .content {
         height: 50vh;
         top:0;
+    }
+
+    .hide-on-small {
+        display: none;
     }
 }
