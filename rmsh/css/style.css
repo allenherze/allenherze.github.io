@@ -281,6 +281,7 @@ a {
   align-items: center;
   text-align: center;
   margin: 0 auto;
+  overflow: auto;
 }
 
 #contact .form-wrap {
@@ -295,7 +296,6 @@ a {
 #contact .form-container h2 {
   margin: 0 auto;
   font-size: 2.5rem;
-  overflow: auto;
 }
 
 #contact .form-wrap .form-group {
