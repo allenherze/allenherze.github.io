@@ -1,0 +1,12 @@
+body {
+  line-height: 1.2;
+}
+
+.hide-on-small {
+  display: none;
+}
+
+#showcase {
+  display: flex;
+  flex-direction: column;
+}
