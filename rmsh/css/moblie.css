@@ -11,14 +11,30 @@ body {
 }
 
 #navbar {
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* flex-direction: row; */
+  align-items: stretch;
+  justify-content: start;
   z-index: 1;
+  height: 50px;
+}
+
+#navbar h1.logo {
+  padding-left: 0.5rem;
+  justify-self: center;
+  align-self: center;
+}
+
+#navbar .menu {
+  justify-self: end;
+  align-self: center;
 }
 
 #navbar li a {
   padding-top: 1rem;
+  visibility: hidden;
+  transition: all 0.5s ease-in-out;
 }
 
 #showcase {
