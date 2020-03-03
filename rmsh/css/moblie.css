@@ -2,6 +2,8 @@ body {
   line-height: 1.2;
 }
 
+/* Utility */
+
 .hide-on-small {
   display: none;
 }
@@ -10,32 +12,71 @@ body {
   font-size: 2.5rem;
 }
 
+/* Navbar */
+
 #navbar {
   display: grid;
   grid-template-columns: 1fr 1fr;
   /* flex-direction: row; */
-  align-items: stretch;
-  justify-content: start;
+  align-items: center;
+  justify-content: center;
   z-index: 1;
-  height: 50px;
+  height: 80px;
 }
 
 #navbar h1.logo {
   padding-left: 0.5rem;
   justify-self: center;
   align-self: center;
+  font-size: 1.3rem;
+}
+
+#navbar #toggler {
+  display: inline-block;
+  position: absolute;
+  top: 21px;
+  right: 14px;
+  width: 1.3rem;
+  height: 1.3rem;
+  opacity: 0;
+}
+
+#navbar #toggler:checked ~ ul li a {
+  background: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  visibility: visible;
+  opacity: 1;
 }
 
 #navbar .menu {
+  display: inline-block;
   justify-self: end;
   align-self: center;
+  font-size: 1.3rem;
 }
 
-#navbar li a {
-  padding-top: 1rem;
+#navbar ul {
+  display: table;
   visibility: hidden;
+  margin: 0;
+  padding: 0;
+}
+#navbar ul li {
+  display: block;
+  height: auto;
+  width: 100%;
+}
+
+#navbar ul li a {
+  display: block;
+  height: auto;
+  width: 100%;
+  visibility: hidden;
+  opacity: 0;
   transition: all 0.5s ease-in-out;
 }
+
+/* Showcase */
 
 #showcase {
   background: url("../img/mbg.jpg") center center/cover;
@@ -44,7 +85,7 @@ body {
 }
 
 #showcase .showcase-header {
-  padding: 0;
+  font-size: 2.3rem;
 }
 
 #gallery .image-gallery {
@@ -54,5 +95,5 @@ body {
   justify-content: center;
   align-items: center;
   column-count: 1;
-  width: 90%;
+  width: 85%;
 }

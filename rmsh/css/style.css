@@ -133,6 +133,11 @@ a {
   border-radius: 10px;
 }
 
+#navbar label,
+#hamburger {
+  display: none;
+}
+
 /* Showcase */
 
 #showcase {
