@@ -133,8 +133,8 @@ a {
   border-radius: 10px;
 }
 
-#navbar label,
-#hamburger {
+#navbar .menu,
+#toggler {
   display: none;
 }
 
