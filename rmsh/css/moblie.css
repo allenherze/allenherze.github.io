@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   line-height: 1.2;
 }
@@ -16,7 +20,7 @@ body {
 
 #navbar {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   /* flex-direction: row; */
   align-items: center;
   justify-content: center;
@@ -25,7 +29,8 @@ body {
 }
 
 #navbar h1.logo {
-  /* padding-left: 0.5rem; */
+  padding-left: 0.5rem;
+  margin-top: 0.2rem;
   justify-self: center;
   align-self: center;
   font-size: 1.3rem;
@@ -55,26 +60,35 @@ body {
 
 #navbar .menu {
   display: inline-block;
-  justify-self: end;
-  align-self: center;
   font-size: 1.3rem;
+  position: absolute;
+  top: 21px;
+  right: 16px;
 }
 
 #navbar ul {
-  display: table;
+  display: flex;
+  flex-direction: column;
   visibility: hidden;
-  margin-top: 1rem;
   padding: 0;
+  margin-top: 1rem;
 }
+
 #navbar ul li {
   display: block;
   height: auto;
+  width: 100%;
+  margin: 0;
+  text-align: center;
 }
 
 #navbar ul li a {
+  font-size: 1.2rem;
+  font-weight: bold;
   display: block;
-  height: auto;
-  width: 80vw;
+  height: 50px;
+  width: 370px;
+  overflow: hidden;
   visibility: hidden;
   opacity: 0;
   transition: all 0.5s ease-in-out;
@@ -92,6 +106,12 @@ body {
   font-size: 2.3rem;
 }
 
+#showcase:before {
+  content: "";
+}
+
+/* Gallery */
+
 #gallery .image-gallery {
   display: flex;
   margin: 0 auto;
@@ -100,4 +120,9 @@ body {
   align-items: center;
   column-count: 1;
   width: 85%;
+}
+
+.btn:hover {
+  color: #fff;
+  background: var(--navbar-color);
 }
