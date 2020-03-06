@@ -88,10 +88,14 @@ body {
   display: block;
   height: 50px;
   width: 370px;
-  overflow: hidden;
+  overflow-y: hidden;
   visibility: hidden;
   opacity: 0;
   transition: all 0.5s ease-in-out;
+}
+
+#navbar li.fade {
+  opacity: 0;
 }
 
 /* Showcase */
@@ -125,4 +129,17 @@ body {
 .btn:hover {
   color: #fff;
   background: var(--navbar-color);
+}
+
+@media (min-width: 400px) {
+  #navbar ul li a {
+    width: 420px;
+  }
+}
+
+@media (min-width: 600px) {
+  #navbar ul li a {
+    width: 750px;
+    height: 60px;
+  }
 }

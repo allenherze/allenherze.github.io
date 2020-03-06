@@ -1,1 +1,5 @@
-const ul = document.getElementsByName("ul");
+setInterval() {
+  if (document.getElementById('toggler')) {
+    
+  }
+}
