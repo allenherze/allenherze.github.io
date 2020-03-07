@@ -57,6 +57,7 @@ body {
   background: rgba(0, 0, 0, 0.6);
   visibility: visible;
   opacity: 1;
+  border-bottom: 1px #ddd solid;
 }
 
 #navbar .menu {
@@ -73,6 +74,8 @@ body {
   visibility: hidden;
   padding: 0;
   margin-top: 1rem;
+  align-items: center;
+  justify-content: center;
 }
 
 #navbar ul li {
@@ -116,6 +119,11 @@ body {
   content: "";
 }
 
+.btn:hover {
+  color: #fff;
+  background: var(--navbar-color);
+}
+
 /* Gallery */
 
 #gallery .image-gallery {
@@ -128,9 +136,67 @@ body {
   width: 85%;
 }
 
-.btn:hover {
+/* Contact form */
+
+#contact {
+  padding: 0;
+}
+
+#contact .form-container {
+  margin: 0 10px;
+}
+
+#contact .form-wrap {
+  margin: 1rem 0;
+  width: 90%;
+}
+
+#contact .form-container h2 {
+  font-size: 1.7rem;
+  margin-bottom: 1rem;
+}
+
+#contact .form-wrap .form-group input {
+  height: 30px;
+}
+
+#contact .form-wrap .form-group textarea {
+  height: 15vh;
+}
+
+/* Social */
+
+#social {
+  margin: 0;
+  padding: 0;
+}
+
+#social p {
+  display: none;
+}
+
+#social .facebook i {
+  padding: 0 4px;
+  text-align: center;
+}
+
+#social .facebook,
+#social .instagram {
+  border-radius: 50%;
+}
+
+#social .facebook {
+  background-color: #3b5998;
   color: #fff;
-  background: var(--navbar-color);
+}
+
+#social .instagram {
+  background: linear-gradient(to right, #8a3ab9, #e95950, #bc2a8d, #fccc63, #fbad50, #cd486b, #4c68d7);
+  color: #fff;
+}
+
+#contact .btn-form {
+  font-size: 1.1rem;
 }
 
 @media (min-width: 400px) {
@@ -147,5 +213,14 @@ body {
 
   #contact .form-wrap .form-group textarea {
     height: 10vh;
+  }
+
+  #social p {
+    display: inline-block;
+  }
+
+  #social .facebook,
+  #social .instagram {
+    border-radius: 20px;
   }
 }

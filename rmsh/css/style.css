@@ -182,13 +182,6 @@ a {
 }
 
 #gallery .image-gallery {
-  /* display: grid;
-  grid-template-columns: repeat(4, 1fr); */
-  /*grid-template-rows: auto;
-  grid-template-areas:
-    ". image-1 image-8 image-5"
-    ". image-1 image-8 image-5";
-  grid-gap: 5px; */
   column-count: 3;
   column-gap: 1rem;
   row-gap: 1rem;
