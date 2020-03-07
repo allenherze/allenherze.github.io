@@ -283,21 +283,19 @@ a {
 }
 
 #contact .form-container {
-  width: 1100px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
   margin: 0 auto;
-  overflow: auto;
 }
 
 #contact .form-wrap {
   /* width: auto; */
   background: var(--primary-color);
   padding: 1rem;
-  width: 50%;
+  width: 60%;
   color: #fff;
   border-radius: 10px;
 }
