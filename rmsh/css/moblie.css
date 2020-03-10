@@ -16,6 +16,11 @@ body {
   font-size: 2.5rem;
 }
 
+.container {
+  width: 95%;
+  margin: 0 auto;
+}
+
 /* Navbar */
 
 #navbar {
@@ -182,7 +187,7 @@ body {
 
 #social .facebook,
 #social .instagram {
-  border-radius: 50%;
+  border-radius: 50px;
 }
 
 #social .facebook {
@@ -197,6 +202,10 @@ body {
 
 #contact .btn-form {
   font-size: 1.1rem;
+}
+
+#success h1 {
+  margin: 0 auto;
 }
 
 @media (min-width: 400px) {
